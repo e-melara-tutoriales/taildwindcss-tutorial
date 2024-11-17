@@ -7,7 +7,7 @@
     <title>Tailwindcss</title>
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
-  <body class="bg-slate-100">
+  <body class="bg-slate-100 flex flex-col h-screen">
     <header class="bg-white shadow px-6">
       <section
         aria-label="Header"
@@ -134,77 +134,10 @@
       </nav>
     </header>
 
-    <main class="p-4">
+    <main class="p-4 flex-1">
       <section
-        class="grid lg:grid-cols-4 gap-4 md:grid-cols-2 max-w-6xl mx-auto"
+        class="grid lg:grid-cols-3 gap-4 md:grid-cols-2 max-w-6xl mx-auto"
       >
-        <article class="bg-white shadow flex flex-col rounded overflow-hidden">
-          <div class="h-52">
-            <img
-              class="h-full w-full object-cover object-center"
-              src="./img/article-1.jpg"
-              alt="Desarrollo de una API con laravel"
-            />
-          </div>
-          <div class="p-5 space-y-3 flex-1">
-            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
-            <h2 class="text-xl font-semibold text-slate-800 leading-55">
-              Desarrollo de una API con laravel
-            </h2>
-            <p class="text-slate-500 hidden md:block">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quae aut, itaque inventore amet adipisci enim id natus
-              eveniet, optio quas alias.
-            </p>
-          </div>
-          <div class="flex p-5 space-x-2">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://ui-avatars.com/api?name=Autor"
-              alt=""
-            />
-            <div class="flex flex-col justify-center">
-              <span class="text-sm font-semibold leading-4 text-slate-600"
-                >Author Jorge</span
-              >
-              <span class="text-sm text-slate-500">Mar 18, 2024</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="bg-white shadow flex flex-col rounded overflow-hidden">
-          <div class="h-52">
-            <img
-              class="h-full w-full object-cover object-center"
-              src="./img/article-3.jpg"
-              alt="Desarrollo de una API con laravel"
-            />
-          </div>
-          <div class="p-5 space-y-3 flex-1">
-            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
-            <h2 class="text-xl font-semibold text-slate-800 leading-5">
-              Desarrollo de una API con laravel
-            </h2>
-            <p class="text-slate-500 hidden md:block">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quae aut, itaque inventore amet adipisci
-            </p>
-          </div>
-          <div class="flex p-5 space-x-2">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://ui-avatars.com/api?name=Autor"
-              alt=""
-            />
-            <div class="flex flex-col justify-center">
-              <span class="text-sm font-semibold leading-4 text-slate-600"
-                >Author Jorge</span
-              >
-              <span class="text-sm text-slate-500">Mar 18, 2024</span>
-            </div>
-          </div>
-        </article>
-
         <article class="bg-white shadow flex flex-col rounded overflow-hidden">
           <div class="h-52">
             <img
