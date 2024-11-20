@@ -8,6 +8,10 @@
     @apply bg-white py-2 px-3 shadow hover:shadow-md active:shadow-sm duration-300 flex items-center transition;
   }
 
+  .btn.primary {
+    @apply bg-sky-500 rounded text-white text-lg font-bold py-2 hover:bg-sky-600 duration-300 shadow-md active:bg-sky-400 block;
+  }
+
   .btn.active {
     @apply shadow-none bg-transparent duration-0;
   }
@@ -22,5 +26,9 @@
 
   .pagination .btn:last-child {
     @apply rounded-r;
+  }
+
+  .input {
+    @apply rounded border-slate-300 bg-slate-50 shadow-sm placeholder:text-slate-400 focus:border-sky-500 focus:ring-sky-500 text-sky-900;
   }
 }
