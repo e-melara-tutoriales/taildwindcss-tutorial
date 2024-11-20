@@ -132,10 +132,176 @@
       </nav>
     </header>
 
-    <main class="p-4">
-      <section
-        class="grid lg:grid-cols-4 gap-4 md:grid-cols-2 max-w-6xl mx-auto"
-      ></section>
+    <main class="p-4 flex-1 max-w-6xl mx-auto">
+      <h1 class="text-sky-600 text-4xl text-center mt-4 mb-8">Blog</h1>
+      <section class="grid lg:grid-cols-3 gap-4 md:grid-cols-2">
+        <article class="bg-white shadow flex flex-col rounded overflow-hidden">
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="./img/article-2.jpg"
+              alt="Desarrollo de una API con laravel"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1">
+            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-5">
+              Desarrollo de una API con laravel
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quae aut, itaque inventore amet adipisci enim id natus
+              eveniet, optio quas alias
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="w-10 h-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Autor"
+              alt=""
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600"
+                >Author Jorge</span
+              >
+              <span class="text-sm text-slate-500">Mar 18, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white shadow flex flex-col rounded overflow-hidden">
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="./img/article-4.jpg"
+              alt="Desarrollo de una API con laravel"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1">
+            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-5">
+              Desarrollo de una API con laravel
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quae aut, itaque inventore amet adipisci enim id natus
+              eveniet, optio quas alias, fugit necessitatibus. Expedita
+              necessitatibus saepe aspernatur.
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="w-10 h-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Autor"
+              alt=""
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600"
+                >Author Jorge</span
+              >
+              <span class="text-sm text-slate-500">Mar 18, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white shadow flex flex-col rounded overflow-hidden">
+          <div class="h-52">
+            <img
+              class="h-full w-full object-cover object-center"
+              src="./img/article-5.jpg"
+              alt="Desarrollo de una API con laravel"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1">
+            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
+            <h2 class="text-xl font-semibold text-slate-800 leading-5">
+              Desarrollo de una API con laravel
+            </h2>
+            <p class="text-slate-500 hidden md:block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quae aut, itaque inventore amet adipisci enim id natus
+              eveniet, optio quas alias, fugit necessitatibus. Expedita
+              necessitatibus saepe aspernatur.
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="w-10 h-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Autor"
+              alt=""
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm font-semibold leading-4 text-slate-600"
+                >Author Jorge</span
+              >
+              <span class="text-sm text-slate-500">Mar 18, 2024</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <nav
+        class="flex justify-between items-center text-sm text-slate-500 mt-4"
+      >
+        <a href="#" class="btn rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 mr-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+            />
+          </svg>
+          Anterior
+        </a>
+        <div class="pagination">
+          <a href="#" class="btn">1</a>
+          <a href="#" class="btn active">2</a>
+          <a href="#" class="btn">3</a>
+          <a href="#" class="btn">4</a>
+          <span class="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </span>
+          <a href="#" class="btn">5</a>
+          <a href="#" class="btn">6</a>
+        </div>
+        <a href="#" class="btn rounded">
+          Siguiente
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 ml-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </a>
+      </nav>
     </main>
 
     <footer class="py-10">

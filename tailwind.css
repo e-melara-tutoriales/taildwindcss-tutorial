@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Componentes personalizados */
+@layer components {
+  .btn {
+    @apply bg-white py-2 px-3 shadow hover:shadow-md active:shadow-sm duration-300 flex items-center transition;
+  }
+
+  .btn.active {
+    @apply shadow-none bg-transparent duration-0;
+  }
+
+  .pagination {
+    @apply md:flex hidden;
+  }
+
+  .pagination .btn:nth-child(1) {
+    @apply rounded-l;
+  }
+
+  .pagination .btn:last-child {
+    @apply rounded-r;
+  }
+}
