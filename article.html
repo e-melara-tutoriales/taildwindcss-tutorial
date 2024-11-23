@@ -7,14 +7,14 @@
     <title>Tailwindcss</title>
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
-  <body class="bg-slate-100 flex flex-col h-screen dark:bg-slate-950">
-    <header class="bg-white shadow px-6 dark:bg-slate-900">
+  <body class="bg-slate-100 flex flex-col h-screen">
+    <header class="bg-white shadow px-6">
       <section
         aria-label="Header"
         class="flex justify-between h-16 items-center max-w-7xl mx-auto"
       >
         <button
-          class="text-slate-500 dark:hover:text-slate-100 dark:text-slate-400 hover:bg-sky-500 hover:text-slate-100 rounded p-1 -ml-1 transition-colors focus:ring-2 focus:ring-slate-200"
+          class="text-slate-500 hover:bg-sky-500 hover:text-slate-100 rounded p-1 -ml-1 transition-colors focus:ring-2 focus:ring-slate-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,6 @@
             />
           </svg>
         </button>
-
         <div class="flex -mr-4 items-center">
           <a href="#" class="text-sky-500 hover:rotate-6 duration-200">
             <svg
@@ -56,17 +55,17 @@
           >
             <a class="px-3 py-2 text-sky-500" href="#">Home</a>
             <a
-              class="text-slate-600 dark:text-slate-400 dark:hover:text-white px-3 py-2 hover:text-sky-500 transition-colors"
+              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors"
               href="about.html"
               >About</a
             >
             <a
-              class="text-slate-600 dark:text-slate-400 dark:hover:text-white px-3 py-2 hover:text-sky-500 transition-colors"
+              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors"
               href="blog.html"
               >Blog</a
             >
             <a
-              class="text-slate-600 dark:text-slate-400 dark:hover:text-white px-3 py-2 hover:text-sky-500 transition-colors"
+              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors"
               href="contact.html"
               >Contact</a
             >
@@ -75,8 +74,7 @@
 
         <div class="flex">
           <button
-            id="btn-toggle-dark"
-            class="mr-4 dark:hover:text-sky-500 dark:text-slate-400 text-slate-500 rounded-full hover:text-sky-500 -ml-1 transition-colors focus:ring-2 focus:ring-slate-200 focus:ring-offset-1 dark:focus:ring-0 dark:focus:ring-transparent"
+            class="mr-4 text-slate-500 rounded-full hover:text-sky-500 -ml-1 transition-colors focus:ring-2 focus:ring-slate-200 focus:ring-offset-1"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,29 +82,12 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6 dark:hidden"
-              id="sun"
+              class="size-6"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-              />
-            </svg>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 dark:block hidden"
-              id="moon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
               />
             </svg>
           </button>
@@ -124,7 +105,7 @@
       <!-- Menu navegacion -->
       <nav
         aria-label="Navegation movil"
-        class="md:hidden space-y-1 py-3 border-t dark:border-slate-500"
+        class="md:hidden space-y-1 py-3 border-t"
       >
         <a
           href="index.html"
@@ -134,19 +115,19 @@
         </a>
         <a
           href="about.html"
-          class="text-slate-700 dark:text-slate-400 dark:hover:text-white hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
+          class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
         >
           About
         </a>
         <a
           href="blog.html"
-          class="text-slate-700 dark:text-slate-400 dark:hover:text-white hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
+          class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
         >
           Blog
         </a>
         <a
           href="contact.html"
-          class="text-slate-700 dark:text-slate-400 dark:hover:text-white hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
+          class="text-slate-700 hover:bg-sky-500 hover:text-white block px-3 py-2 rounded-md transition-colors"
         >
           Contact
         </a>
@@ -154,149 +135,89 @@
     </header>
 
     <main class="p-4 flex-1">
-      <section
-        class="grid lg:grid-cols-3 gap-4 md:grid-cols-2 max-w-6xl mx-auto"
-      >
-        <article
-          class="bg-white shadow flex flex-col rounded overflow-hidden dark:bg-slate-900"
-        >
-          <div class="h-52">
-            <a href="/article.html" class="hover:opacity-75 duration-300">
-              <img
-                class="h-full w-full object-cover object-center"
-                src="./img/article-2.jpg"
-                alt="Desarrollo de una API con laravel"
-              />
-            </a>
-          </div>
-          <div class="p-5 space-y-3 flex-1">
-            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
-            <h2
-              class="text-xl font-semibold text-slate-800 leading-5 dark:text-white"
+      <article class="flex flex-col max-w-4xl mx-auto">
+        <div class="h-52 md:h-72 lg:h-96">
+          <img
+            class="h-full rounded w-full object-cover object-center"
+            src="./img/article-2.jpg"
+            alt="Desarrollo de una API con laravel"
+          />
+        </div>
+        <div class="pt-4 space-y-3 flex-1 md:text-center">
+          <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
+          <h2
+            class="text-2xl md:ext-4xl font-semibold text-slate-800 leading-5"
+          >
+            Desarrollo de una API con laravel
+          </h2>
+        </div>
+        <div class="flex pt-4 space-x-2 md:mx-auto">
+          <img
+            class="w-10 h-10 rounded-full"
+            src="https://ui-avatars.com/api?name=Autor"
+            alt=""
+          />
+          <div class="flex flex-col justify-center">
+            <span class="text-sm font-semibold leading-4 text-slate-600"
+              >Author Jorge</span
             >
-              <a class="hover:underline" href="/article.html">
-                Desarrollo de una API con laravel
-              </a>
-            </h2>
-            <p class="text-slate-500 hidden md:block dark:text-slate-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quae aut, itaque inventore amet adipisci enim id natus
-              eveniet, optio quas alias
-            </p>
+            <span class="text-sm text-slate-500">Mar 18, 2024</span>
           </div>
-          <div class="flex p-5 space-x-2">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://ui-avatars.com/api?name=Autor"
-              alt=""
-            />
-            <div class="flex flex-col justify-center">
-              <span
-                class="text-sm font-semibold leading-4 text-slate-600 dark:text-slate-400"
-              >
-                Author Jorge
-              </span>
-              <span class="text-sm text-slate-500">Mar 18, 2024</span>
-            </div>
-          </div>
-        </article>
+        </div>
+        <div class="prose prose-slate lg:prose-xl mx-auto mt-6">
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
 
-        <article
-          class="bg-white shadow flex flex-col rounded overflow-hidden dark:bg-slate-900"
-        >
-          <div class="h-52">
-            <img
-              class="h-full w-full object-cover object-center"
-              src="./img/article-4.jpg"
-              alt="Desarrollo de una API con laravel"
-            />
-          </div>
-          <div class="p-5 space-y-3 flex-1">
-            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
-            <h2
-              class="text-xl font-semibold text-slate-800 leading-5 dark:text-white"
-            >
-              Desarrollo de una API con laravel
-            </h2>
-            <p class="text-slate-500 hidden md:block dark:text-slate-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quae aut, itaque inventore amet adipisci enim id natus
-              eveniet, optio quas alias, fugit necessitatibus. Expedita
-              necessitatibus saepe aspernatur.
-            </p>
-          </div>
-          <div class="flex p-5 space-x-2">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://ui-avatars.com/api?name=Autor"
-              alt=""
-            />
-            <div class="flex flex-col justify-center">
-              <span
-                class="text-sm font-semibold leading-4 text-slate-600 dark:text-slate-400"
-              >
-                Author Jorge
-              </span>
-              <span class="text-sm text-slate-500">Mar 18, 2024</span>
-            </div>
-          </div>
-        </article>
-
-        <article
-          class="bg-white shadow flex flex-col rounded overflow-hidden dark:bg-slate-900"
-        >
-          <div class="h-52">
-            <img
-              class="h-full w-full object-cover object-center"
-              src="./img/article-5.jpg"
-              alt="Desarrollo de una API con laravel"
-            />
-          </div>
-          <div class="p-5 space-y-3 flex-1">
-            <h3 class="text-sm font-semibold text-sky-500">Laravel</h3>
-            <h2
-              class="text-xl font-semibold text-slate-800 leading-5 dark:text-white"
-            >
-              Desarrollo de una API con laravel
-            </h2>
-            <p class="text-slate-500 hidden md:block dark:text-slate-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur quae aut, itaque inventore amet adipisci enim id natus
-              eveniet, optio quas alias, fugit necessitatibus. Expedita
-              necessitatibus saepe aspernatur.
-            </p>
-          </div>
-          <div class="flex p-5 space-x-2">
-            <img
-              class="w-10 h-10 rounded-full"
-              src="https://ui-avatars.com/api?name=Autor"
-              alt=""
-            />
-            <div class="flex flex-col justify-center">
-              <span
-                class="text-sm font-semibold leading-4 text-slate-600 dark:text-slate-400"
-              >
-                Author Jorge
-              </span>
-              <span class="text-sm text-slate-500">Mar 18, 2024</span>
-            </div>
-          </div>
-        </article>
-      </section>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+            assumenda quidem, quas totam quod enim. Ratione, mollitia temporibus
+            ullam quae praesentium sit consequuntur quasi, iste quis laborum
+            reprehenderit rem vero.
+          </p>
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Exercitationem assumenda corporis sint obcaecati facilis repellendus
+            quam consectetur, veniam accusamus ipsam enim ut cum dicta provident
+            inventore a architecto at quis?
+          </p>
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+          </ol>
+          <pre><code>class User {}</code></pre>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+            suscipit soluta quidem mollitia veniam ipsum cumque quasi esse
+            beatae, eius, <code> ipsam optio eligendi rem</code> officiis error
+            saepe, libero sint accusamus.
+          </p>
+        </div>
+      </article>
     </main>
 
-    <footer class="py-10 px-4">
+    <footer class="py-10">
       <div
         class="flex flex-col max-w-6xl m-auto md:justify-between md:flex-row items-center md:space-y-0 space-y-4"
       >
-        <div class="text-center text-sm dark:text-slate-400 text-slate-600">
+        <div class="text-center text-sm text-slate-600">
           &COPY; 2024 All Rights Reserved
         </div>
         <nav class="flex space-x-4">
           <a href="#">
             <svg
               role="img"
-              class="h-6 dark:text-slate-400 dark:hover:text-[#0866FF] hover:text-[#0866FF] text-slate-600 fill-current w-6"
+              class="h-6 hover:text-[#0866FF] text-slate-600 fill-current w-6"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -309,7 +230,7 @@
           <a href="#">
             <svg
               role="img"
-              class="h-6 dark:text-slate-400 dark:hover:text-[#fff] hover:text-[#000000] text-slate-600 fill-current w-6"
+              class="h-6 hover:text-[#000000] text-slate-600 fill-current w-6"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -322,7 +243,7 @@
           <a href="#">
             <svg
               role="img"
-              class="h-6 dark:text-slate-400 dark:hover:text-[#E4405F] text-slate-600 hover:text-[#E4405F] fill-current w-6"
+              class="h-6 text-slate-600 hover:text-[#E4405F] fill-current w-6"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -335,7 +256,7 @@
           <a href="#">
             <svg
               role="img"
-              class="h-6 dark:text-slate-400 dark:hover:text-[#25D366] hover:text-[#25D366] text-slate-600 fill-current w-6"
+              class="h-6 hover:text-[#25D366] text-slate-600 fill-current w-6"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -348,7 +269,5 @@
         </nav>
       </div>
     </footer>
-
-    <script src="./main.js" type="text/javascript"></script>
   </body>
 </html>
